@@ -1,0 +1,43 @@
+{
+  "loop": {
+    "target": "向量数据库 X 的 Python SDK",
+    "timebox_minutes": 10,
+    "single_output": "一条跑通的接口：插入 3 条记录并召回 top2",
+    "objective_criteria": "脚本 exit 0 且 stdout 含 2 条召回结果与相似度分数",
+    "prereq_ready": true
+  },
+  "cookbook": {
+    "kept": true,
+    "env_doc": true,
+    "minimal_code": true,
+    "known_input_sample": true,
+    "cookbook_count": 12
+  },
+  "handoff": {
+    "needed": true,
+    "current_progress": "环境已起（一键脚本通过）、最小代码已跑通，卡在样例召回顺序与预期不一致",
+    "failed_paths": ["方案A：换余弦距离→失败原因：分数变负，文档未说明该参数方向"],
+    "next_single_action": "把 insert 的 normalize 参数改为 true 后重跑 main.py",
+    "next_action_criteria": "stdout 召回顺序与预期样例一致且 exit 0",
+    "constraints": "Token 剩 500 次；今晚 22:00 前完成；不动鉴权与索引模块"
+  },
+  "roles": {
+    "task_needs_split": true,
+    "roles_assigned": ["检索", "执行", "校验", "呈现"],
+    "verifier_independent_context": true,
+    "verifier_only_list_not_edit": true,
+    "max_rounds": 2
+  },
+  "vibe_coding": {
+    "picked_pain_point": "周报生成（内部）",
+    "high_freq": true,
+    "low_risk": true,
+    "internal_use": true,
+    "domain_expert_drives": true
+  },
+  "artifacts": {
+    "verifiable_output": "作品页新增卡片：周报生成器运行截图 + 可运行仓库链接",
+    "verifiable_in_30s": true,
+    "digital_profile_updated": true
+  }
+}

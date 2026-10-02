@@ -1,0 +1,43 @@
+{
+  "loop": {
+    "target": "某大模型新框架",
+    "timebox_minutes": 0,
+    "single_output": "了解一下这个框架的能力",
+    "objective_criteria": "",
+    "prereq_ready": false
+  },
+  "cookbook": {
+    "kept": false,
+    "env_doc": true,
+    "minimal_code": false,
+    "known_input_sample": false,
+    "cookbook_count": -1
+  },
+  "handoff": {
+    "needed": true,
+    "current_progress": "做了一点",
+    "failed_paths": [],
+    "next_single_action": "接下来优化一下性能，再看看文档",
+    "next_action_criteria": "感觉差不多了",
+    "constraints": ""
+  },
+  "roles": {
+    "task_needs_split": true,
+    "roles_assigned": ["检索", "执行", "呈现"],
+    "verifier_independent_context": false,
+    "verifier_only_list_not_edit": false,
+    "max_rounds": 5
+  },
+  "vibe_coding": {
+    "picked_pain_point": "客户对账系统",
+    "high_freq": true,
+    "low_risk": false,
+    "internal_use": false,
+    "domain_expert_drives": false
+  },
+  "artifacts": {
+    "verifiable_output": "参与了对账项目",
+    "verifiable_in_30s": false,
+    "digital_profile_updated": false
+  }
+}
